@@ -20,8 +20,6 @@ public class LocalizationTests extends BaseTests {
     public void testArabicLangInPrivacyPage(){
 
         //waiting localization issue to be fixed
-
-
     }
 
 

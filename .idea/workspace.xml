@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configReader/ConfigPropReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lang.arabic.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lang.english.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/header/SocialMediaTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" afterDir="false" />
+    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 2/10/2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +27,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ed799862-b4ba-4437-af93-bd2a76884388" />
+        <option name="url" value="https://github.com/radwamohie/FajrWebApp.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2VyyU1u27msKhIUiBrDzuJygarf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -63,71 +65,17 @@
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SocialMediaTests">
-    <configuration name="LocalizationTests.testArabicLangInHomePage (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SupportTests.testOpeningSupportFromSupportMessage">
+    <configuration name="SupportTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="localization.*" />
+          <option name="PATTERN" value="support.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="localization" />
-      <option name="MAIN_CLASS_NAME" value="localization.LocalizationTests" />
-      <option name="METHOD_NAME" value="testArabicLangInHomePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalizationTests.testArabicLangInHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FajrWebApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="localization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="localization" />
-      <option name="MAIN_CLASS_NAME" value="localization.LocalizationTests" />
-      <option name="METHOD_NAME" value="testArabicLangInHomePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.testLoginByGmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FajrWebApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.LoginTests" />
-      <option name="METHOD_NAME" value="testLoginByGmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SocialMediaTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FajrWebApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="header.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="header" />
-      <option name="MAIN_CLASS_NAME" value="header.SocialMediaTests" />
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -135,17 +83,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocialMediaTests.testSharingOnLinkedin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportTests.testOpeningSupportFromFooter (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="header.*" />
+          <option name="PATTERN" value="support.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="header" />
-      <option name="MAIN_CLASS_NAME" value="header.SocialMediaTests" />
-      <option name="METHOD_NAME" value="testSharingOnLinkedin" />
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromFooter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportTests.testOpeningSupportFromFooter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromFooter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportTests.testOpeningSupportFromHintMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromHintMessage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportTests.testOpeningSupportFromSupportMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromSupportMessage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SocialMediaTests" />
-        <item itemvalue="TestNG.LocalizationTests.testArabicLangInHomePage" />
-        <item itemvalue="TestNG.LoginTests.testLoginByGmail" />
-        <item itemvalue="TestNG.LocalizationTests.testArabicLangInHomePage (1)" />
-        <item itemvalue="TestNG.SocialMediaTests.testSharingOnLinkedin" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromSupportMessage" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter (2)" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromHintMessage" />
+        <item itemvalue="TestNG.SupportTests" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +174,14 @@
       <option name="presentableId" value="Default" />
       <updated>1695822628461</updated>
     </task>
+    <task id="LOCAL-00001" summary="project files 2/10/2023">
+      <created>1696256381802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696256381802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,15 +195,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/WindowManager.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project files 2/10/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="project files 2/10/2023" />
   </component>
 </project>

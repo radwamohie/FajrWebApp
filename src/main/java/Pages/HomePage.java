@@ -19,7 +19,7 @@ public class HomePage {
     public By loginEmail= By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-1olbkvj']");
 
     public By SupportButton_Hint = By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[6]/p/a");
-    public By SupportButton_SuppotMessage = By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[4]/div[2]/a");
+    public By SupportButton_SupportMessage = By.cssSelector("a[class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-67h145']");
     public By SupportButton_Footer = By.xpath("//*[@id=\"root\"]/div[2]/div[3]/div[2]/div[1]/a");
 
 
@@ -27,6 +27,9 @@ public class HomePage {
         this.driver=driver;
     }
 
+    private void clickLink(String linkText){
+        driver.findElement(By.linkText(linkText)).click();
+    }
 
     public String getLoginEmail(){
         return driver.findElement(loginEmail).getText();
@@ -62,22 +65,20 @@ public class HomePage {
         return driver.findElement(BodyContent_ar).getText();
     }
 
-    public void clickSupportFromHintMessage(){
-        driver.findElement(SupportButton_Hint).click();
+    public DiscordPage clickSupportFromHintMessage(){
+       clickLink("Discord");
+        return new DiscordPage(driver);
     }
 
-    public void clickSupportFromSupportMessage(){
-        driver.findElement(SupportButton_SuppotMessage).click();
+    public DiscordPage clickSupportFromSupportMessage(){
+        clickLink("Join us now");
+         return new DiscordPage(driver);
     }
 
     public DiscordPage clickSupportFromFooter(){
-
-    }
-
-
-
-
-
-
+           clickLink("Discord Support");
+            return new DiscordPage(driver);
+        }
 
 }
+
