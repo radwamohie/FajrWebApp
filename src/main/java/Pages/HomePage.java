@@ -2,9 +2,26 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import utils.PageBase;
 
-public class HomePage {
+public class HomePage extends PageBase {
     public WebDriver driver;
+
+    public HomePage(WebDriver driver){
+        super(driver);
+        this.driver = driver;
+    }
+
+    public By addressFieldBy = By.xpath("//input[@name='address']");
+    public By locationDropdownlistBy = By.className("pac-container");
+    public By calculationMethodBy = By.id("mui-component-select-calculationMethod");
+    String calcMethodValue;
+    By calculationOptionBy = By.xpath("//span[text() = '"+ calcMethodValue + "']");
+    //By dayLightButtonBy = By.xpath("//span//input[@name= \"dayLight\"]");
+    By dayLightButtonBy = By.className("dayLightButtonBy");
+
+
     public By linkedin_icon = By.cssSelector("button[aria-label='linkedin']");
     public By facebook_icon = By.cssSelector("button[aria-label='facebook']");
     public By twitter_icon = By.cssSelector("button[aria-label='twitter']");
@@ -23,9 +40,6 @@ public class HomePage {
     public By SupportButton_Footer = By.xpath("//*[@id=\"root\"]/div[2]/div[3]/div[2]/div[1]/a");
 
 
-    public HomePage(WebDriver driver) {
-        this.driver=driver;
-    }
 
 
     public String getLoginEmail(){
@@ -70,8 +84,35 @@ public class HomePage {
         driver.findElement(SupportButton_SuppotMessage).click();
     }
 
-    public DiscordPage clickSupportFromFooter(){
 
+
+
+    public void enterAddress(String country){
+        WebElement addressField = driver.findElement(addressFieldBy);
+        typeInField(addressField,addressFieldBy,country);
+    }
+    public void clearAddressField(){
+        WebElement addressField = driver.findElement(addressFieldBy);
+        clearFieldText(addressField,addressFieldBy);
+    }
+    public void selectCountry(String country){
+        selectAutoSuggestiveResult(locationDropdownlistBy,country);
+    }
+    public void setCalcMethodBy(String value){
+        calcMethodValue = value;
+        calculationOptionBy = By.xpath("//span[text() = '"+ calcMethodValue + "']");
+    }
+    public void selectCalculationMethod(String value){
+        WebElement calculationMethodDropDown = driver.findElement(calculationMethodBy);
+        clickOnElement(calculationMethodDropDown, calculationMethodBy);
+        setCalcMethodBy(value);
+        WebElement calculationOption = driver.findElement(calculationOptionBy);
+        clickOnElement(calculationOption, calculationOptionBy);
+
+    }
+    public void clickDayLightRadioButton(){
+        WebElement dayLightRadioButton = driver.findElement(dayLightButtonBy);
+        clickOnElement(dayLightRadioButton,dayLightButtonBy);
     }
 
 
