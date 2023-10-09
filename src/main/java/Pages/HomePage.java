@@ -1,84 +1,115 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class HomePage {
+public class HomePage extends BasePage{
     public WebDriver driver;
-    public By linkedin_icon = By.cssSelector("button[aria-label='linkedin']");
-    public By facebook_icon = By.cssSelector("button[aria-label='facebook']");
-    public By twitter_icon = By.cssSelector("button[aria-label='twitter']");
-    public By whatsapp_icon = By.cssSelector("button[aria-label='whatsapp']");
-    public By productHunt_icon = By.cssSelector("a[class='productHuntLink']]");
+    protected JavascriptExecutor js;
 
-    public By arabic_icon =By.xpath("//*[@id=\"root\"]/div[2]/div[1]/nav/div/div[3]/div/div/button[2]");
-    public By headerTitle_ar =By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 socialLinksContent css-9l3uo3']");
-    public By BodyContent_ar =By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-bz273z']");
 
-    public By loginName= By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-16vw3op']");
-    public By loginEmail= By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-1olbkvj']");
+    private By linkedin_icon = By.cssSelector("button[aria-label='linkedin']");
+    private By facebook_icon = By.cssSelector("button[aria-label='facebook']");
+    private By twitter_icon = By.cssSelector("button[aria-label='twitter']");
+    private By whatsapp_icon = By.cssSelector("button[aria-label='whatsapp']");
+    private By productHunt_icon = By.className("productHuntLink");
 
-    public By SupportButton_Hint = By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[6]/p/a");
-    public By SupportButton_SupportMessage = By.cssSelector("a[class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-67h145']");
-    public By SupportButton_Footer = By.xpath("//*[@id=\"root\"]/div[2]/div[3]/div[2]/div[1]/a");
+    private By arabic_icon = By.xpath("//*[@id=\"root\"]/div[2]/div[1]/nav/div/div[3]/div/div/button[2]");
+    private By headerTitle_ar = By.xpath("/html/body/div[1]/div[1]/p");
+    private By bodyContent_ar = By.xpath("/html/body/div[1]/div[2]/div[2]/div[2]/p[1]");
+
+    private By loginName = By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-16vw3op']");
+    private By loginEmail = By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-1olbkvj']");
+
+    private By supportButton_Hint = By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[6]/p/a");
+    private By supportButton_SupportMessage = By.cssSelector("a[class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-67h145']");
+    private By supportButton_Footer =By.xpath("//div[@class='MuiBox-root css-1wrkhkf']/a[@href='https://discord.com/invite/Ve8JvD8Chq']");
+
+
+    private By blinkLink = By.xpath("//*[@id=\"root\"]/div[2]/div[3]/p/a[2]");
+    private By jetaiLabLink=By.xpath("/html/body/div[1]/div[2]/div[3]/p/a[1]");
 
 
     public HomePage(WebDriver driver) {
+        super(driver);
         this.driver=driver;
     }
 
-    private void clickLink(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
-    }
-
     public String getLoginEmail(){
-        return driver.findElement(loginEmail).getText();
+        return  getElementText(loginEmail);
     }
 
     public String getLoginName(){
-        return driver.findElement(loginName).getText();
+        return getElementText(loginName);
     }
 
     public void clickOnLinkedinIcon(){
-        driver.findElement(linkedin_icon).click();
+        clickOnElement(linkedin_icon);
     }
     public void clickOnWhatsappIcon(){
-        driver.findElement(whatsapp_icon).click();
+        clickOnElement(whatsapp_icon);
     }
     public void clickOnFacebookIcon(){
-        driver.findElement(facebook_icon).click();
+        clickOnElement(facebook_icon);
     }
     public void clickOnTwitterIcon(){
-        driver.findElement(twitter_icon).click();
+        clickOnElement(twitter_icon);
     }
     public void clickOnProductHuntIcon(){
-        driver.findElement(productHunt_icon).click();
+        clickOnElement(productHunt_icon);
     }
     public void switchToArabicLang(){
-        driver.findElement(arabic_icon).click();
+        clickOnElement(arabic_icon);
     }
+
     public String getArabicHeaderTitle(){
-        return driver.findElement(headerTitle_ar).getText();
+        return getElementText(headerTitle_ar);
     }
 
     public String getArabicBodyContent(){
-        return driver.findElement(BodyContent_ar).getText();
+     return getElementText(bodyContent_ar);
     }
 
     public DiscordPage clickSupportFromHintMessage(){
-       clickLink("Discord");
+        waitVisibilityOf(supportButton_Hint);
+        System.out.println(supportButton_Hint);
+        clickOnElement(supportButton_Hint);
         return new DiscordPage(driver);
     }
 
     public DiscordPage clickSupportFromSupportMessage(){
-        clickLink("Join us now");
+        waitVisibilityOf(supportButton_SupportMessage);
+        System.out.println(supportButton_SupportMessage);
+        clickOnElement(supportButton_SupportMessage);
          return new DiscordPage(driver);
     }
 
     public DiscordPage clickSupportFromFooter(){
-           clickLink("Discord Support");
+        waitVisibilityOf(supportButton_Footer);
+        System.out.println(supportButton_Footer);
+        clickOnElement(supportButton_Footer);
             return new DiscordPage(driver);
         }
+
+    public void scrollToBottom() {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    }
+
+    public BlinkPage clickOnBlinkLink(){
+        clickOnElement(blinkLink);
+        return new BlinkPage(driver);
+    }
+
+    public JetaiLabsPage clickOnJetaLabsLink(){
+        clickOnElement(jetaiLabLink);
+        return new JetaiLabsPage(driver);
+    }
+
 
 }
 

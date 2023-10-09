@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 2/10/2023">
-      <change afterPath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BlinkPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/JetaiLabsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configReader/ConfigPropReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang.english.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang.english.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" afterDir="false" />
     </list>
@@ -65,8 +72,8 @@
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SupportTests.testOpeningSupportFromSupportMessage">
-    <configuration name="SupportTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SupportTests.testOpeningSupportFromFooter (1)">
+    <configuration name="SupportTests.testOpeningSupportFromFooter (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -76,14 +83,33 @@
       </extension>
       <option name="PACKAGE_NAME" value="support" />
       <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromFooter" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportTests.testOpeningSupportFromFooter (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportTests.testOpeningSupportFromFooter (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="support" />
+      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromFooter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportTests.testOpeningSupportFromFooter (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -119,24 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportTests.testOpeningSupportFromHintMessage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FajrWebApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="support.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="support" />
-      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
-      <option name="METHOD_NAME" value="testOpeningSupportFromHintMessage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SupportTests.testOpeningSupportFromSupportMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
@@ -157,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter (1)" />
         <item itemvalue="TestNG.SupportTests.testOpeningSupportFromSupportMessage" />
-        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter (2)" />
-        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromHintMessage" />
-        <item itemvalue="TestNG.SupportTests" />
         <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter (4)" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromFooter (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696256381802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="project files 2/10/2023">
+      <created>1696276587605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696276587605</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,5 +213,56 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project files 2/10/2023" />
     <option name="LAST_COMMIT_MESSAGE" value="project files 2/10/2023" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/DiscordPage.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

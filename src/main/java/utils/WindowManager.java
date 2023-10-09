@@ -14,20 +14,19 @@ public class WindowManager {
 
     public void switchToWindow(String windowTitle){
       var windows =  driver.getWindowHandles();
-       //System.out.println("Windows handles:");
+       System.out.println("Windows handles:");
         windows.forEach(System.out::println);
 
         for(String window:windows){
-           // System.out.println("Switching to window: "+window);
+            System.out.println("Switching to window: "+window);
             driver.switchTo().window(window);
-         // System.out.println("current window : "+driver.getTitle());
+         System.out.println("current window : "+driver.getTitle());
 
-          /*  if(windowTitle.equals(driver.getTitle())){
+          if(windowTitle.equals(driver.getTitle())){
                 break;
-            }*/
+            }
         }
     }
-
 
 
 }
