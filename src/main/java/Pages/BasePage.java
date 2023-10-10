@@ -30,16 +30,28 @@ public class BasePage {
         driver.findElement(By.linkText(linkText)).click();
     }
 
-    public void clickOnElement(By elementBy){
-        driver.findElement(elementBy).click();
+    public void clickOnElement(WebElement element,By elementBy){
+        waitVisibilityOf(elementBy);
+       element.click();
     }
 
-    public String getElementText(By elementBy){
-        return driver.findElement(elementBy).getText();
+    public String getElementText(WebElement element,By elementBy){
+        waitVisibilityOf(elementBy);
+        return element.getText();
+    }
+    public String getElementValue(WebElement element,By elementBy){
+        waitVisibilityOf(elementBy);
+        return element.getAttribute("value");
     }
 
-    public void setElement(By elementBy ,String value){
-       driver.findElement(elementBy).sendKeys(value);
+    public void clearElementText(WebElement element,By elementBy){
+        waitVisibilityOf(elementBy);
+        element.clear();
+    }
+
+    public void setElement(WebElement element,By elementBy ,String value){
+        waitVisibilityOf(elementBy);
+       element.sendKeys(value);
     }
 
 }
