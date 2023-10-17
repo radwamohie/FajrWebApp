@@ -4,6 +4,9 @@ import Pages.HomePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.HasDevTools;
+import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -12,6 +15,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import utils.WindowManager;
+import org.openqa.selenium.devtools.v85.fetch.Fetch;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -21,14 +26,18 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
-    private WebDriver driver;
+    protected ChromeDriver driver;
     protected HomePage homePage;
+    protected DevTools devtools;
+
     private By homeButton = By.cssSelector("img[class='MuiBox-root css-1yje24i']");
 
     @BeforeClass
     public void SetUp(){
-        System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-        driver=new ChromeDriver(getChromeOptions());
+        //System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
+        driver = new ChromeDriver(getChromeOptions());
+        devtools = driver.getDevTools();
+        devtools.createSession();
         goHome();
     }
 
@@ -61,7 +70,7 @@ public class BaseTests {
     private ChromeOptions getChromeOptions(){
         ChromeOptions options = new  ChromeOptions();
       //  options.setHeadless(true);
-        options.addArguments("user-data-dir=C:\\Users\\radwa\\AppData\\Local\\Temp\\scoped_dir11128_1157923901");
+        options.addArguments("user-data-dir=/tmp/.com.google.Chrome.sNyfOn");
         options.addArguments("profile-directory=Profile 1");
         return options;
     }
