@@ -8,9 +8,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BasePage {
-    private WebDriver driver;
+    protected WebDriver driver;
 
     public BasePage (WebDriver driver){
         this.driver=driver;
@@ -32,7 +34,7 @@ public class BasePage {
 
     public void clickOnElement(WebElement element,By elementBy){
         waitVisibilityOf(elementBy);
-       element.click();
+        element.click();
     }
 
     public String getElementText(WebElement element,By elementBy){
@@ -53,5 +55,7 @@ public class BasePage {
         waitVisibilityOf(elementBy);
        element.sendKeys(value);
     }
+
+
 
 }
