@@ -37,7 +37,7 @@ public class HomePage extends BasePage {
 
     private By getLocationButtonBy = By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-b0qesw']");
     private By locationValueBy = By.xpath("//input[@name='address']");
-
+    private By dayLightButtonBy = By.xpath("//input[@name = 'dayLight']//..");
 
     public String getLoginEmail() {
         WebElement loginEmail = driver.findElement(loginEmailBy);
@@ -141,5 +141,12 @@ public class HomePage extends BasePage {
         clickOnElement(jetaiLabLink,jetaiLabLinkBy);
         return new JetaiLabsPage(driver);
     }
+
+    public void clickOnDayLightSavingsButton(){
+        WebElement dayLightRadioButton = driver.findElement(dayLightButtonBy);
+        clickOnElement(dayLightRadioButton,dayLightButtonBy);
+    }
+
+
 }
 

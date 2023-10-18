@@ -62,7 +62,7 @@ public class BaseTests {
             }
         }
     }*/
-    @AfterClass
+    //@AfterClass
     public  void tearDown(){
      driver.quit();
     }
@@ -70,7 +70,7 @@ public class BaseTests {
     private ChromeOptions getChromeOptions(){
         ChromeOptions options = new  ChromeOptions();
       //  options.setHeadless(true);
-        options.addArguments("user-data-dir=/tmp/.com.google.Chrome.sNyfOn");
+        options.addArguments("user-data-dir=/tmp/.com.google.Chrome.sNyfOn/Profile 2/");
         options.addArguments("profile-directory=Profile 1");
         return options;
     }

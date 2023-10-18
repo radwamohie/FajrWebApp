@@ -20,16 +20,17 @@ public class CalendarTests extends BaseTests {
     }
     @Test
     public void gettingUserCurrentLocation() throws InterruptedException {
-        Map<String, Object> coordinates = new HashMap<String, Object>();
-        coordinates.put("latitude",30);
-        coordinates.put("longitude",30);
-        coordinates.put("accuracy",1);
-        driver.executeCdpCommand("Emulation.setGeolocationOverride", coordinates);
-        //driver.get("https://stg-calendar.fajrapp.com/");
+        setLocation(30,30,1);
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[contains(.,'Get')]")).click();
         Thread.sleep(3000);
 
+    }
+
+    @Test
+    public void applyDaylightSaving() throws InterruptedException {
+        Thread.sleep(5000);
+        homePage.clickOnDayLightSavingsButton();
     }
 
     public void setLocation(int latitude,int longitude,int accuracy){
@@ -37,7 +38,7 @@ public class CalendarTests extends BaseTests {
         coordinates.put("latitude",latitude);
         coordinates.put("longitude",longitude);
         coordinates.put("accuracy",accuracy);
-        //driver.executeCdpCommand("Emulation.setGeolocationOverride", coordinates);
+        driver.executeCdpCommand("Emulation.setGeolocationOverride", coordinates);
     }
 
 
