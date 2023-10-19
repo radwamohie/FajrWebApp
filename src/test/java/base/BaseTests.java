@@ -46,10 +46,10 @@ public class BaseTests {
         driver.get("https://stg-calendar.fajrapp.com/");
         homePage = new HomePage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+      //  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    /*@AfterMethod
+    @AfterMethod
     public void recordFailure(ITestResult result) {
         if(ITestResult.FAILURE == result.getStatus()) {
             var camera = (TakesScreenshot) driver;
@@ -61,16 +61,18 @@ public class BaseTests {
                 e.printStackTrace();
             }
         }
-    }*/
-    @AfterClass
+    }
+   // @AfterClass
     public  void tearDown(){
      driver.quit();
     }
 
     private ChromeOptions getChromeOptions(){
         ChromeOptions options = new  ChromeOptions();
-      //  options.setHeadless(true);
-        options.addArguments("user-data-dir=/tmp/.com.google.Chrome.sNyfOn");
+
+     // options.setHeadless(true);
+        options.addArguments("user-data-dir=C:\\Users\\radwa\\AppData\\Local\\Temp\\scoped_dir11128_1157923901");
+
         options.addArguments("profile-directory=Profile 1");
         return options;
     }

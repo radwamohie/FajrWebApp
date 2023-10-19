@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 10/10/2023">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/header/SocialMediaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/header/SocialMediaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" afterDir="false" />
+    </list>
+=======
     <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 10/10/2023" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,9 +54,15 @@
       </UrlAndAccount>
     </option>
   </component>
+
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+=======
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
+
   <component name="ProjectId" id="2VyyU1u27msKhIUiBrDzuJygarf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,23 +71,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.29885057",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/radwa/OneDrive/Desktop/Automation/poi-src-5.2.4-20230921-5.2.4&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
+
+  <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime">
+    <configuration name="C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+=======
   <component name="RunManager" selected="TestNG.CalendarTests.testCustomCommand">
     <configuration name="CalendarTests.testCustomCommand" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
@@ -80,12 +130,16 @@
       <option name="METHOD_NAME" value="testCustomCommand" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTests.testGetCurrentLocation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+
+    <configuration name="CalendarTests.createMyPrayersCalendar" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +149,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="CalendarTests" />
       <option name="MAIN_CLASS_NAME" value="CalendarTests.CalendarTests" />
-      <option name="METHOD_NAME" value="testGetCurrentLocation" />
+      <option name="METHOD_NAME" value="createMyPrayersCalendar" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,6 +157,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+=======
     <configuration name="CalendarTests.testGetCurrentLocation (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
@@ -113,7 +169,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="CalendarTests" />
       <option name="MAIN_CLASS_NAME" value="CalendarTests.CalendarTests" />
-      <option name="METHOD_NAME" value="testGetCurrentLocation" />
+      <option name="METHOD_NAME" value="testAddingDayLightSavingTime" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,7 +195,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportTests.testOpeningSupportFromSupportMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SupportTests.testOpeningSupportFromHintMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -149,7 +205,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="support" />
       <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
-      <option name="METHOD_NAME" value="testOpeningSupportFromSupportMessage" />
+      <option name="METHOD_NAME" value="testOpeningSupportFromHintMessage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -157,13 +213,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.CalendarTests.createMyPrayersCalendar" />
+      <item itemvalue="TestNG.SupportTests" />
+      <item itemvalue="TestNG.SupportTests.testOpeningSupportFromHintMessage" />
+      <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
+      <item itemvalue="TestNG.C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp/testng.xml" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CalendarTests.testCustomCommand" />
-        <item itemvalue="TestNG.CalendarTests.testGetCurrentLocation" />
-        <item itemvalue="TestNG.CalendarTests.testGetCurrentLocation (2)" />
-        <item itemvalue="TestNG.CalendarTests.testGetCurrentLocation (1)" />
-        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromSupportMessage" />
+
+        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
+        <item itemvalue="TestNG.CalendarTests.createMyPrayersCalendar" />
+        <item itemvalue="TestNG.C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp/testng.xml" />
+        <item itemvalue="TestNG.SupportTests" />
+        <item itemvalue="TestNG.SupportTests.testOpeningSupportFromHintMessage" />
+
       </list>
     </recent_temporary>
   </component>
@@ -198,12 +263,13 @@
       <updated>1696786107531</updated>
     </task>
     <task id="LOCAL-00004" summary="project files 10/10/2023">
-      <option name="closed" value="true" />
-      <created>1697536223514</created>
+
+      <created>1696919250937</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1697536223514</updated>
+      <updated>1696919250937</updated>
+
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -219,7 +285,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Radwa" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -240,11 +306,111 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/login/LoginTests.java</url>
+
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/localization/LocalizationTests.java</url>
           <line>16</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+=======
+          <url>file://$PROJECT_DIR$/src/test/java/login/LoginTests.java</url>
+          <line>23</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/externalLinks/ExternalLinksTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Pages/HomePage.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FajrWebApp$C__Users_radwa_OneDrive_Desktop_Automation_FajrWebApp_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1697350005587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FajrWebApp$ExternalLinksTests_testBlink22Website.ic" NAME="ExternalLinksTests.testBlink22Website Coverage Results" MODIFIED="1697007877802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>externalLinks.*</FILTER>
+    </SUITE>
   </component>
 </project>
