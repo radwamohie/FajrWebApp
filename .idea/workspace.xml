@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 10/10/2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -17,6 +18,9 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/SupportTests.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 10/10/2023" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +54,15 @@
       </UrlAndAccount>
     </option>
   </component>
+
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+=======
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+
   <component name="ProjectId" id="2VyyU1u27msKhIUiBrDzuJygarf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,6 +71,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,6 +82,17 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.29885057",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/radwa/OneDrive/Desktop/Automation/poi-src-5.2.4-20230921-5.2.4&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,6 +100,7 @@
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
+
   <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime">
     <configuration name="C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
@@ -92,6 +115,20 @@
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
+=======
+  <component name="RunManager" selected="TestNG.CalendarTests.testCustomCommand">
+    <configuration name="CalendarTests.testCustomCommand" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FajrWebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CalendarTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CalendarTests" />
+      <option name="MAIN_CLASS_NAME" value="CalendarTests.CalendarTests" />
+      <option name="METHOD_NAME" value="testCustomCommand" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners>
         <listener class="org.testng.reporters.EmailableReporter" />
@@ -101,6 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="CalendarTests.createMyPrayersCalendar" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
@@ -119,7 +157,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTests.testAddingDayLightSavingTime" type="TestNG" temporary="true" nameIsGenerated="true">
+
+=======
+    <configuration name="CalendarTests.testGetCurrentLocation (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -137,17 +177,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupportTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTests.testGetCurrentLocation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="support.*" />
+          <option name="PATTERN" value="CalendarTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="support" />
-      <option name="MAIN_CLASS_NAME" value="support.SupportTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="CalendarTests" />
+      <option name="MAIN_CLASS_NAME" value="CalendarTests.CalendarTests" />
+      <option name="METHOD_NAME" value="testGetCurrentLocation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -181,11 +222,13 @@
     </list>
     <recent_temporary>
       <list>
+
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
         <item itemvalue="TestNG.CalendarTests.createMyPrayersCalendar" />
         <item itemvalue="TestNG.C:/Users/radwa/OneDrive/Desktop/Automation/FajrWebApp/testng.xml" />
         <item itemvalue="TestNG.SupportTests" />
         <item itemvalue="TestNG.SupportTests.testOpeningSupportFromHintMessage" />
+
       </list>
     </recent_temporary>
   </component>
@@ -220,11 +263,13 @@
       <updated>1696786107531</updated>
     </task>
     <task id="LOCAL-00004" summary="project files 10/10/2023">
+
       <created>1696919250937</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
       <updated>1696919250937</updated>
+
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -261,6 +306,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+
           <url>file://$PROJECT_DIR$/src/test/java/support/SupportTests.java</url>
           <line>19</line>
           <option name="timeStamp" value="11" />
@@ -306,10 +352,12 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+=======
           <url>file://$PROJECT_DIR$/src/test/java/login/LoginTests.java</url>
           <line>23</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
           <line>16</line>
@@ -355,6 +403,7 @@
           <line>158</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+
       </breakpoints>
     </breakpoint-manager>
   </component>
