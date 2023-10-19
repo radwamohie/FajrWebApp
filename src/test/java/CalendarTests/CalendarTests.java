@@ -19,8 +19,8 @@ public class CalendarTests extends BaseTests {
 
     @Test(priority = 13)
     @Step("Test Case 014")
-    public void testAddingDayLightSavingTime() throws InterruptedException {
-        Thread.sleep(5000);
+    public void testAddingDayLightSavingTime()throws Exception {
+        Thread.sleep(1000);
         homePage.addDayLightSavingTime();
     }
 
@@ -29,6 +29,5 @@ public class CalendarTests extends BaseTests {
     public void createMyPrayersCalendar(){
         homePage.createMyPrayersCalendar();
     }
-
 
 }

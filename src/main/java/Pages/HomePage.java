@@ -28,7 +28,6 @@ public class HomePage extends BasePage {
     private By loginEmailBy = By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-1olbkvj']");
 
     private By supportButton_HintBy = By.linkText("Discord");
-            //By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[6]/p/a");
     private By supportButton_MessageBy = By.xpath("//a[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-67h145']");
     private By supportButton_FooterBy = By.xpath("//div[@class='MuiBox-root css-1wrkhkf']/a[@href='https://discord.com/invite/Ve8JvD8Chq']");
 
@@ -41,15 +40,12 @@ public class HomePage extends BasePage {
     private By getLocationButtonBy = By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-b0qesw']");
     private By locationValueBy = By.xpath("//input[@name='address']");
 
-    private By dayLightCheckBoxBy = By.xpath("//input[@name='dayLight']");
-           // By.xpath("//span[@class='MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3' and contains(text(),'Daylight Saving Time (+1 Hour)')]");
-
-
-    private By prayerTimesBy = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-1dlfh30']");
+    private By dayLightCheckBoxBy = By.xpath("//input[@name='dayLight']//..");
 
     private By prayerCalenderButtonBy = By.xpath("//button[@class='MuiButtonBase-rootMuiButton-rootMuiButton-textMuiButton-textPrimaryMuiButton-sizeMediumMuiButton-textSizeMediumcss-1js7ss9']");
-
     private By CheckYourCalendarButtonBy = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-1n64gtl']");
+
+    private By FajrTimeBy=By.xpath("//div[@class='MuiBox-root css-l6ldvr']");
 
     public String getLoginEmail() {
         WebElement loginEmail = driver.findElement(loginEmailBy);
@@ -156,10 +152,11 @@ public class HomePage extends BasePage {
 
     public void addDayLightSavingTime(){
         WebElement dayCheckBox = driver.findElement(dayLightCheckBoxBy);
-        System.out.println(dayCheckBox.getText());
+       System.out.println(dayCheckBox.getText());
         clickOnElement(dayCheckBox,dayLightCheckBoxBy);
-        String checkboxValue = getElementValue(dayCheckBox,dayLightCheckBoxBy);
-        System.out.println(checkboxValue);
+       /* WebElement fajrtime = driver.findElement(FajrTimeBy);
+        String fajrtimevalueValue = getElementText(fajrtime,FajrTimeBy);
+        System.out.println(fajrtimevalueValue);*/
     }
 
 

@@ -3,7 +3,9 @@ package base;
 import Pages.HomePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -20,17 +22,27 @@ import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import static org.openqa.selenium.chrome.ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY;
+
 public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
     private By homeButton = By.cssSelector("img[class='MuiBox-root css-1yje24i']");
 
-    @BeforeClass
+   @BeforeClass
     public void SetUp(){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
         driver=new ChromeDriver(getChromeOptions());
+        //ChromeDriverService service=new ChromeDriverService.Builder().withLogOutput(System.out).build();
+       //driver=new ChromeDriver(service);
         goHome();
     }
+   /* @BeforeClass
+   public void SetUpFireFox(){
+       System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe");
+       driver=new FirefoxDriver();
+       goHome();
+   }*/
 
     @BeforeMethod
     public void goHome(){
@@ -53,7 +65,7 @@ public class BaseTests {
             }
         }
     }
-   // @AfterClass
+   @AfterClass
     public  void tearDown(){
      driver.quit();
     }

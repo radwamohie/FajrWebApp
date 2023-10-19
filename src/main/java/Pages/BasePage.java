@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,8 +31,8 @@ public class BasePage {
 
     public void clickOnElement(WebElement element,By elementBy){
         waitVisibilityOf(elementBy);
-     //  element.click();
-        JavascriptExecutor executor =(JavascriptExecutor)driver;
+      //element.click();
+      JavascriptExecutor executor =(JavascriptExecutor)driver;
         (executor).executeScript("arguments[0].click()",element);
     }
 
@@ -65,4 +66,11 @@ public class BasePage {
             throw new RuntimeException(e);
         }// element.click();
     }
+
+    public void performClickOnelement(WebElement element,By elementBy){
+        waitVisibilityOf(elementBy);
+        new Actions(driver).click(element).perform();
+    }
+
+
 }
