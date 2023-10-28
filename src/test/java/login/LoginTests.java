@@ -1,12 +1,9 @@
 package login;
 
 import base.BaseTests;
-import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
@@ -20,7 +17,7 @@ public class LoginTests extends BaseTests {
 
     public void testLoginCredentialsByGmail(){
         String[] expected = new String[]{"Radwa Mohie","radwa.mohie@blink22.com"};
-        String[] actual = new String[]{homePage.getLoginName(), homePage.getLoginEmail()};
+        String[] actual = new String[]{calendarPage.getLoginName(), calendarPage.getLoginEmail()};
         String[] message = new String[]{"wrong name", "wrong email"};
         assertArrayEquals(expected,actual);
     }

@@ -1,15 +1,18 @@
 package Pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chromium.ChromiumDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends BasePage {
-    public WebDriver driver;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
-    public HomePage(WebDriver driver) {
+
+public class CalendarPage extends BasePage {
+    public ChromiumDriver driver;
+
+    public CalendarPage(ChromiumDriver driver) {
         super(driver);
         this.driver = driver;
     }
@@ -22,7 +25,7 @@ public class HomePage extends BasePage {
 
     private By arabic_iconBy = By.xpath("//*[@id=\"root\"]/div[2]/div[1]/nav/div/div[3]/div/div/button[2]");
     private By headerTitle_arBy = By.xpath("/html/body/div[1]/div[1]/p");
-    private By bodyContent_arBy = By.xpath("/html/body/div[1]/div[2]/div[2]/div[2]/p[1]");
+    private By bodyContent_arBy = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-1f07r8g']");
 
     private By loginNameBy = By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-16vw3op']");
     private By loginEmailBy = By.cssSelector("p[class='MuiTypography-root MuiTypography-body1 css-1olbkvj']");
@@ -42,9 +45,13 @@ public class HomePage extends BasePage {
 
     private By dayLightCheckBoxBy = By.xpath("//input[@name='dayLight']//..");
 
-    private By prayerCalenderButtonBy = By.xpath("//button[@class='MuiButtonBase-rootMuiButton-rootMuiButton-textMuiButton-textPrimaryMuiButton-sizeMediumMuiButton-textSizeMediumcss-1js7ss9']");
-    private By CheckYourCalendarButtonBy = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-1n64gtl']");
+    private By prayerCalenderButtonBy = By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1js7ss9']");
+            //By.xpath("//div[@class='MuiBox-root css-79elbk']/button[contains(text(),'قم بإنشاء تقويم صلواتي')]");
+    private By calendarCreationMeassageBy= By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-1n64gtl']");
 
+    private By unsyncFromCalendarBy= By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1fo2gpo']");
+
+    private By removeCalendarBy=By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-nj1j04']");
     private By FajrTimeBy=By.xpath("//div[@class='MuiBox-root css-l6ldvr']");
 
     public String getLoginEmail() {
@@ -144,25 +151,57 @@ public class HomePage extends BasePage {
         return new BlinkPage(driver);
     }
 
-    public JetaiLabsPage clickOnJetaLabsLink() {
+    public JetaiLabsPage clickOnJetaiLabsLink() {
         WebElement jetaiLabLink = driver.findElement(jetaiLabLinkBy);
         clickOnElement(jetaiLabLink,jetaiLabLinkBy);
         return new JetaiLabsPage(driver);
     }
 
     public void addDayLightSavingTime(){
-        WebElement dayCheckBox = driver.findElement(dayLightCheckBoxBy);
-       System.out.println(dayCheckBox.getText());
-        clickOnElement(dayCheckBox,dayLightCheckBoxBy);
-       /* WebElement fajrtime = driver.findElement(FajrTimeBy);
-        String fajrtimevalueValue = getElementText(fajrtime,FajrTimeBy);
-        System.out.println(fajrtimevalueValue);*/
+        try {
+            WebElement dayCheckBox = driver.findElement(dayLightCheckBoxBy);
+            WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(5));
+            clickOnElement(dayCheckBox,dayLightCheckBoxBy);
+        } catch (NoSuchElementException e)
+        {
+            System.out.println("element not found" + e.getMessage());
+        }
     }
-
 
     public void createMyPrayersCalendar(){
         WebElement prayerCalendarButton =driver.findElement(prayerCalenderButtonBy);
         System.out.println(prayerCalendarButton.getText());
         clickOnElement(prayerCalendarButton,prayerCalenderButtonBy);
     }
+
+    public String getCalendarCreationMessage(){
+        WebElement calendarCreationMessage = driver.findElement(calendarCreationMeassageBy);
+        System.out.println(calendarCreationMessage.getText());
+        return getElementText(calendarCreationMessage,calendarCreationMeassageBy);
+    }
+
+    public void setLocation(double latitude,double longitude,double accuracy){
+        Map<String, Object> coordinates = new HashMap<String, Object>();
+        coordinates.put("latitude",latitude);
+        coordinates.put("longitude",longitude);
+        coordinates.put("accuracy",accuracy);
+        driver.executeCdpCommand("Emulation.setGeolocationOverride", coordinates);
+    }
+    public void scrollToPageBottom(){
+        JavascriptExecutor js  = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
+    public void unSyncFromCalendar(){
+        WebElement unSyncButton =driver.findElement(unsyncFromCalendarBy);
+        System.out.println(unSyncButton.getText());
+        clickOnElement(unSyncButton,unsyncFromCalendarBy);
+    }
+    public void removeCalendar(){
+        WebElement removeButton =driver.findElement(removeCalendarBy);
+        System.out.println(removeButton.getText());
+        clickOnElement(removeButton,removeCalendarBy);
+    }
+
+
 }
