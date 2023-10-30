@@ -1,50 +1,49 @@
 package base;
 
-import Pages.HomePage;
+import Pages.CalendarPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.remote.Augmenter;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.chromium.ChromiumDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import utils.WindowManager;
-import org.openqa.selenium.devtools.v85.fetch.Fetch;
-
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.time.Duration;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.devtools.DevTools;
 
 public class BaseTests {
-    protected ChromeDriver driver;
-    protected HomePage homePage;
+    private WebDriver driver;
+    protected CalendarPage calendarPage;
     protected DevTools devtools;
+    private By fajrCalendarLogo = By.xpath("//div[@class='MuiTypography-root MuiTypography-body1 css-3ws210']");
 
-    private By homeButton = By.cssSelector("img[class='MuiBox-root css-1yje24i']");
-
-    @BeforeClass
+   @BeforeClass
     public void SetUp(){
-        //System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver(getChromeOptions());
-        devtools = driver.getDevTools();
+       System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
+        driver=new ChromeDriver(getChromeOptions());
+        DevTools  devtools = ((ChromiumDriver)driver).getDevTools();
         devtools.createSession();
         goHome();
     }
 
+   /* @BeforeClass
+   public void SetUpFireFox(){
+       System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe");
+       driver=new FirefoxDriver();
+       goHome();
+   }*/
+
     @BeforeMethod
     public void goHome(){
         driver.get("https://stg-calendar.fajrapp.com/");
-        homePage = new HomePage(driver);
+        calendarPage = new CalendarPage((ChromiumDriver) driver);
         driver.manage().window().maximize();
       //  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
@@ -62,17 +61,15 @@ public class BaseTests {
             }
         }
     }
-   // @AfterClass
+   @AfterClass
     public  void tearDown(){
      driver.quit();
     }
 
     private ChromeOptions getChromeOptions(){
         ChromeOptions options = new  ChromeOptions();
-
      // options.setHeadless(true);
         options.addArguments("user-data-dir=C:\\Users\\radwa\\AppData\\Local\\Temp\\scoped_dir11128_1157923901");
-
         options.addArguments("profile-directory=Profile 1");
         return options;
     }
