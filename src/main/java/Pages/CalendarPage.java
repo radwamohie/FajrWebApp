@@ -52,7 +52,7 @@ public class CalendarPage extends BasePage {
     private By unsyncFromCalendarBy= By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1fo2gpo']");
 
     private By removeCalendarBy=By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-nj1j04']");
-    private By FajrTimeBy=By.xpath("//div[@class='MuiBox-root css-l6ldvr']");
+    private By fajrTimeBy=By.xpath("//div[@class='MuiGrid-root MuiGrid-container css-vnnzou']/div[@class='MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-1 MuiGrid-grid-xs-4 css-jni0n4'][1]/div[@class='MuiBox-root css-1akavnz']/div[@class='MuiBox-root css-l6ldvr']");
 
     public String getLoginEmail() {
         WebElement loginEmail = driver.findElement(loginEmailBy);
@@ -201,6 +201,17 @@ public class CalendarPage extends BasePage {
         WebElement removeButton =driver.findElement(removeCalendarBy);
         System.out.println(removeButton.getText());
         clickOnElement(removeButton,removeCalendarBy);
+    }
+
+    public String getFajrPrayerTimeAsString(){
+        WebElement fajrTime = driver.findElement(fajrTimeBy);
+        //System.out.println(fajrTime.getText());
+        return getElementText(fajrTime,fajrTimeBy);
+    }
+
+    public int getFajrPrayerTime(){
+        WebElement fajrTime = driver.findElement(fajrTimeBy);
+        return convertelementTextToInt(fajrTime,fajrTimeBy);
     }
 
 

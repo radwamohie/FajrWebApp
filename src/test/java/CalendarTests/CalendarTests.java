@@ -4,8 +4,16 @@ import base.BaseTests;
 import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.TestRunner.PriorityWeight.dependsOnMethods;
@@ -36,17 +44,8 @@ public class CalendarTests extends BaseTests {
     }
 
 
-    @Test(priority = 13,description = "verify adding 1 hour to prayers time when check add light saving time")
-    @Step("Test Case 014")
-    public void testAddingDayLightSavingTime() throws Exception {
-        Thread.sleep(1000);
-        calendarPage.addDayLightSavingTime();
-
-        //need assertion for prayers times
-    }
 
     @Test(description = "verify create prayers calendar ")
-
     public void createMyPrayersCalendar()throws Exception {
         Thread.sleep(1000);
         calendarPage.scrollToPageBottom();

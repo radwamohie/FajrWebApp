@@ -30,7 +30,6 @@ public class BaseTests {
         driver=new ChromeDriver(getChromeOptions());
         DevTools  devtools = ((ChromiumDriver)driver).getDevTools();
         devtools.createSession();
-
         goHome();
     }
 
