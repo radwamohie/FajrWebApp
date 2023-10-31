@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 30/10/2023" />
+    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 30/10/2023">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +66,7 @@
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime">
+  <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime (2)">
     <configuration name="CalendarTests.testAddingDayLightSavingTime (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
@@ -82,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTests.testAddingDayLightSavingTime (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTests.testAddingDayLightSavingTime (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -156,18 +159,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (1)" />
-      <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (3)" />
+      <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (2)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (4)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (5)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (2)" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (5)" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (4)" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (1)" />
-        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698695383017</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="project files 30/10/2023">
+      <created>1698695564593</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698695564593</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
