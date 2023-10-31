@@ -43,31 +43,32 @@ public class CalendarTests extends BaseTests {
     @Test(priority = 13,description = "verify adding 1 hour to prayers time when check add light saving time")
     @Step("Test Case 014")
     public void testAddingDayLightSavingTime() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         String fajrTimeBefore = calendarPage.getFajrPrayerTimeAsString();
-        String fajrTimeBeforeStripped = fajrTimeBefore.replaceAll(" AM", " ");
+        System.out.println(fajrTimeBefore);
 
-        String fajrTrimmedBefore = fajrTimeBeforeStripped.trim();
-        System.out.println(fajrTrimmedBefore);
+        String fajrTimeTrimmedBefore=calendarPage.removingAMFromFajrTime(fajrTimeBefore);
+        System.out.println(fajrTimeTrimmedBefore);
+        LocalTime fajrTimeBefore1 = calendarPage.parseFajrStringToTime(fajrTimeTrimmedBefore);
+        System.out.println(fajrTimeBefore1);
 
-        Thread.sleep(1000);
         calendarPage.addDayLightSavingTime();
+
         Thread.sleep(1000);
         String fajrTimeAfter = calendarPage.getFajrPrayerTimeAsString();
-        String fajrTimeAfterStripped = fajrTimeAfter.replaceAll(" AM", " ");
-        String fajrTrimmedAfter = fajrTimeAfterStripped.trim();
-        System.out.println(fajrTrimmedAfter);
+        System.out.println(fajrTimeAfter);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
-        LocalTime dateTime1= LocalTime.parse(fajrTrimmedAfter, formatter);
-        LocalTime dateTime2= LocalTime.parse(fajrTrimmedBefore, formatter);
+        String fajrTimeTrimmedAfter=calendarPage.removingAMFromFajrTime(fajrTimeAfter);
+        System.out.println(fajrTimeTrimmedAfter);
 
-        long diffInHours = java.time.Duration.between(dateTime2, dateTime1).toHours();
-        System.out.println(diffInHours);
+        LocalTime fajrTimeAfter1 = calendarPage.parseFajrStringToTime(fajrTimeTrimmedAfter);
+        System.out.println(fajrTimeAfter1);
 
-        assertEquals(diffInHours,1,"invalid daylight time saving");
+        long durationInHours = calendarPage.durationBetweenPrayertimeInHours(fajrTimeBefore1,fajrTimeAfter1);
+        System.out.println(durationInHours);
+
+        assertEquals( durationInHours,1,"invalid daylight time saving");
     }
-
 
 
     @Test(description = "verify create prayers calendar ")
