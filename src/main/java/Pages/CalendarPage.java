@@ -5,6 +5,8 @@ import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -204,15 +206,31 @@ public class CalendarPage extends BasePage {
     }
 
     public String getFajrPrayerTimeAsString(){
-        WebElement fajrTime = driver.findElement(fajrTimeBy);
-        //System.out.println(fajrTime.getText());
-        return getElementText(fajrTime,fajrTimeBy);
+        WebElement fajrTimeText = driver.findElement(fajrTimeBy);
+       String fajrTimeAsString = getElementText(fajrTimeText,fajrTimeBy);
+        return fajrTimeAsString;
     }
 
-    public int getFajrPrayerTime(){
-        WebElement fajrTime = driver.findElement(fajrTimeBy);
-        return convertelementTextToInt(fajrTime,fajrTimeBy);
+    //remove AM from prayer in string form and trimming it
+    public String removingAMFromFajrTime(String fajrTimeAsString){
+        String stringStrippedTimeElement = fajrTimeAsString.replaceAll(" AM", " ");
+        String fajrTimeTrimmed = stringStrippedTimeElement.trim();
+        return fajrTimeTrimmed;
     }
+
+
+    //method to convert prayer in string form to time component of pattern hours and minutes
+    public LocalTime parseFajrStringToTime(String fajrTimeTrimmed){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
+        LocalTime fajrTime = LocalTime.parse(fajrTimeTrimmed,formatter);
+        return fajrTime;
+    }
+
+    public Long durationBetweenPrayertimeInHours(LocalTime time1 ,LocalTime time2){
+        long diffInHours = java.time.Duration.between(time1,time2).toHours();
+        return diffInHours;
+    }
+
 
 
 }

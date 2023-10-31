@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="project files 30/10/2023">
+    <list default="true" id="7cef735c-f9f5-465b-9d2a-7b993ee1ed72" name="Changes" comment="testAddingDayLightSavingTime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       <recent name="C:\Users\radwa\OneDrive\Desktop\Automation\FajrWebApp\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime (2)">
+  <component name="RunManager" selected="TestNG.CalendarTests.testAddingDayLightSavingTime (1)">
     <configuration name="CalendarTests.testAddingDayLightSavingTime (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
@@ -103,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTests.testAddingDayLightSavingTime (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTests.testAddingDayLightSavingTime (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FajrWebApp" />
       <extension name="coverage">
         <pattern>
@@ -160,17 +162,17 @@
     <list>
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (1)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (2)" />
-      <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (4)" />
+      <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (3)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (5)" />
       <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (1)" />
+        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (3)" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (2)" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime" />
         <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (5)" />
-        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (4)" />
-        <item itemvalue="TestNG.CalendarTests.testAddingDayLightSavingTime (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698695564593</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="testAddingDayLightSavingTime">
+      <created>1698744087315</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698744087315</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testAddingDayLightSavingTime">
+      <created>1698744130162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698744130162</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +272,8 @@
     <MESSAGE value="project files 10/10/2023" />
     <MESSAGE value="project files 28/10/2023" />
     <MESSAGE value="project files 30/10/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="project files 30/10/2023" />
+    <MESSAGE value="testAddingDayLightSavingTime" />
+    <option name="LAST_COMMIT_MESSAGE" value="testAddingDayLightSavingTime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,12 +305,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java</url>
-          <line>132</line>
+          <line>134</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java</url>
-          <line>134</line>
+          <line>136</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -313,28 +330,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
-          <line>28</line>
+          <line>25</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java</url>
-          <line>173</line>
+          <line>175</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Pages/CalendarPage.java</url>
-          <line>172</line>
+          <line>174</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
-          <line>34</line>
+          <line>31</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
-          <line>38</line>
+          <line>35</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CalendarTests/CalendarTests.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
