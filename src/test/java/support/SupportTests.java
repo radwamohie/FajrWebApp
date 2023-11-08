@@ -15,7 +15,9 @@ public class SupportTests extends BaseTests {
         Thread.sleep(1000);
         DiscordPage discordPage = calendarPage.clickSupportFromHintMessage();
         getWindowManager().switchToWindow("Discord");
-        assertEquals(discordPage.getFajrAppLabel(),"Fajr App","Discord page is wrong");
+        Thread.sleep(1000);
+        String fajrLabel= discordPage.getFajrAppLabel();
+        assertEquals(fajrLabel,"Fajr App","Discord page is wrong");
 
     }
     @Test(priority = 3)
@@ -24,7 +26,9 @@ public class SupportTests extends BaseTests {
         Thread.sleep(1000);
         DiscordPage discordPage = calendarPage.clickSupportFromSupportMessage();
         getWindowManager().switchToWindow("Discord");
-        assertEquals(discordPage.getFajrAppLabel(),"Fajr App","Discord page is wrong");
+        Thread.sleep(1000);
+        String fajrLabel= discordPage.getFajrAppLabel();
+        assertEquals(fajrLabel,"Fajr App","Discord page is wrong");
 
     }
     @Test(priority = 2)
@@ -33,6 +37,8 @@ public class SupportTests extends BaseTests {
         Thread.sleep(1000);
         DiscordPage discordPage = calendarPage.clickSupportFromFooter();
         getWindowManager().switchToWindow("Discord");
-        assertEquals(discordPage.getFajrAppLabel(),"Fajr App","Discord page is wrong");
+        Thread.sleep(1000);
+        String fajrLabel= discordPage.getFajrAppLabel();
+        assertEquals(fajrLabel,"Fajr App","Discord page is wrong");
     }
 }
